@@ -1,0 +1,46 @@
+#root {
+  width: 100%;
+  text-align: center;
+  background-color: #11051D;
+}
+#AppHome{
+  background-image: linear-gradient(to bottom right , #100819 , #100A25,#11051D, #2F1949);
+}
+img{
+  width: 100%;
+}
+.pages1{
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+}
+.ParaDiv{
+  position: sticky;
+  top: 100vh;
+  width: 100%;
+}
+.viewport{
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+.SpaceFiller{
+  height: 50vh;
+  width: 100%;
+}
+
+#AppHome {
+  scroll-snap-type: both mandatory;
+  scroll-snap-align: center;
+}
+
+/* .animatedContent{
+  opacity: 0;
+  transition: 300ms;
+  transform: translateX(90%);
+}
+.animatedContent.show{
+  opacity: 1;
+  transform: translateX(0);
+} */

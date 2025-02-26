@@ -1,0 +1,16 @@
+@keyframes rotateBorder {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .border-animation {
+    background: conic-gradient(from 0deg, #ff00ff, #8000ff, #ff00ff);
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    animation: rotateBorder 4s linear infinite;
+  }
+  

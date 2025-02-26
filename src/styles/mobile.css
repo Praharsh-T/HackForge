@@ -1,0 +1,734 @@
+/* Full page css */
+
+.MobileApp {
+    width: 100%;
+    height: 100vh;
+    transition: 500ms;
+}
+.MobileBox{
+    background: linear-gradient(to top , #322c4f80 , #261b3580 , #21133280);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.MobileApp.page0{
+    background-color: #624a7dff;
+}
+.MobileApp.page1{
+    background-color: #5b4477ff;
+}
+.MobileApp.page2{
+    background-color: #50396dff;
+}
+.MobileApp.page3{
+    background-color: #452e63ff;
+}
+.MobileApp.page4{
+    background-color: #3c245bff;
+}
+.MobileApp.page5{
+    background-color: rgb(38, 23, 58);
+}
+.MobileApp.page6{
+    background-color: rgb(27, 16, 41);
+}
+
+.background , .background img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Home Page CSS from here */
+
+.Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomeLogo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    animation: 0.5s ease-out 0s 1 slideInUp;
+}
+
+#HomeCountdown{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: absolute;
+    top: 40%;
+}
+
+.MobileHome {
+    width: 100%;
+    height: 100vh;
+}
+
+.MobileHome .Mountains {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.MobileHome .Mountains img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.MobileHome.forward .InDown{
+    animation: 0.55s ease-out 0s 1 slideOutDown;
+}
+.MobileHome .InDown {
+    animation: 0.5s ease-in 0s 1 slideInDown;
+}
+.MobileHome.forward #HomeLogo{
+    animation: 0.55s ease-in 0s 1  slideOutUp;
+}
+
+.MobileHome .alert{
+    position: absolute;
+    bottom: 0px;
+    /* height: 50px; */
+    width: 90%;
+    margin: 2% 10%;
+    color: antiquewhite;
+    
+    animation: 10s ease-out 0s infinite alerts;
+
+}
+
+.MobileHome .alert .slide{
+    width: 100%;
+    margin: 5px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    border: antiquewhite 2px solid;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.MobileHome .alert .slide .AlertText{
+    width: 80%;
+    border-right: antiquewhite 2px solid;
+    padding: 15px;
+}
+.MobileHome .alert .slide .AlertIcon{
+    width: 20%;
+    padding: 15px;
+}
+/* Abour section CSS from here */
+
+.MobileAbout{
+    width: 100%;
+    height: 100%;
+}
+.AboutBoxes{
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.AboutBoxes .Box{
+    padding: 10px;
+    text-align: start;
+    width: 75%;
+    border-radius: 15px;
+    background-color: #3C5473;
+    border: 3px solid #788698;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: normal;
+}
+.AboutBoxes .inLeft{
+    animation: 0.5s ease-in 0s 1  slideInLeft;
+}
+.forward .AboutBoxes .inLeft , .backward .AboutBoxes .inLeft{
+    animation: 0.55s ease-in 0s 1 slideOutLeft;
+}
+.AboutBoxes .inRight{
+    animation: 0.5s ease-in 0s 1  slideInRight;
+}
+
+.forward .AboutBoxes .inRight , .backward .AboutBoxes .inRight{
+    animation: 0.55s ease-in 0s 1 slideOutRight;
+}
+.AboutBox-title{
+    font-family: var(--fantasy-font);
+    font-size: larger;
+}
+.AboutBox-title .heavy{
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.ahead .MobileAbout .ForestLayer1{
+    animation: 0.5s appearLeft;
+}
+
+/* .forward.MobileAbout .ForestLayer1{
+    animation: 0.5s disappearLeft;
+} */
+.backward.MobileAbout .ForestLayer1{
+    animation: 0.5s disappearLeft;
+}
+
+/* Timeline CSS */
+
+.MobileTimeline{
+    width: 100%;
+    height: 100%;
+}
+.MobileTimelineBox{
+    padding-top: 100px;
+    /* width: 100%; */
+    height: 100%;
+    justify-content: center;
+    padding-left: 50px !important;
+    animation: 0.44s ease-out 0s 1 slideInLeft;
+}
+.MobileTimelineBox li::before  {
+    flex: 0;
+    padding: 0;
+}
+.MobileTimeLineContent{
+    width: auto;
+    max-width: 90%;
+    display: flex;
+    border-radius: 15px;
+    border: 2px solid antiquewhite;
+    min-height: 70px;
+    overflow: hidden;
+    transform: rotateX(90deg);  
+}
+.MTLTitle{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fantasy-font);
+    font-size: 24px;
+    color: antiquewhite;
+    background-color: #788698;
+}
+.MTLDate{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fantasy-font);
+    font-size: 18px;
+    color: antiquewhite;
+    background-color: #3C5473;
+    border-right: 2px solid antiquewhite;
+}
+.MobileTimeline .contentBox{
+    margin-bottom: 12px;
+}
+.content1{
+    animation: 0.22s ease-in 0.44s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.content2{
+    animation: 0.22s ease-in 0.66s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.content3{
+    animation: 0.22s ease-in 0.88s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.content4{
+    animation: 0.22s ease-in 1.10s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.forward .MobileTimeLineContent , .backward .MobileTimeLineContent{
+    animation: 0.33s ease-in 0s 1 rotateOut;
+    animation-fill-mode: forwards;
+}
+.forward .MobileTimelineBox , .backward .MobileTimelineBox{
+    animation: 0.22s ease-out 0.44s 1 slideOutLeft;
+}
+.forward.MobileTimeline .ForestLayer1{
+    animation: 0.5s disappearLeft;
+}
+.back .MobileTimeline .ForestLayer1{
+    animation: 0.5s appearLeft;
+}
+
+.MobileTimeline .disclaimer{
+    color: antiquewhite;
+}
+/* Prizes CSS */
+
+.MobilePrizes{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 10px;
+    font-family: var(--fantasy-font);
+}
+.MobilePrizes .MobilePrizesSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.PrizesTitle , .PrizesSubTitle{
+    color: antiquewhite;
+}
+
+.PrizesTitle{
+    font-size: var(--font-size-large);
+}
+
+.MobilePrizeCards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.MobilePrizeCard{
+    height: 80px;
+    width: 80%;
+    padding: 5px 15px;
+    margin: 10px 25px;
+    border-radius: 10px;
+    background-color: var(--base-blue-light);
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    /* justify-content: start; */
+}
+
+.MobilePrizeCard .textbox{
+    width:  calc(100% - 15px) ;
+    text-align: start;
+}
+
+.MobilePrizeCard .MainText{
+    font-size: var(--font-size-heavy);
+}
+
+.MobilePrizeCard .SubText{
+    font-size: var(--font-size-normal);
+}
+
+.MobilePrizeCard .trophyImg{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    /* transform: translateX(50px); */
+}
+.MobilePrizeCard .TrophyImgDiv{
+    width: 0;
+    height: 60px;
+    overflow-x: visible;
+}
+
+.MobilePrizeCard.firstCard{
+    width: 75%;
+}
+
+.MobilePrizeCard.secondCard{
+    width: 65%;
+}
+
+.MobilePrizeCard.thirdCard{
+    width: 55%;
+}
+
+.MobilePrizeCard{
+    animation: 0.44s ease-out 0s 1 scaleUpLeft;
+}
+.MobilePrizes.backward .MobilePrizeCard , .MobilePrizes.forward .MobilePrizeCard{
+    animation: 0.44s ease-out 0s 1 scaleDownLeft;
+}
+.MobilePrizeCard .textbox{
+    /* animation: 0.22s ease-out 0.33s 1 slideInLeft; */
+    overflow-x: hidden;
+    max-height: 100%;
+    white-space: nowrap;
+}
+
+.MobileFrontTree img{
+    opacity: 75%;
+}
+
+.MobilePrizes.backward .MobileFrontTree{
+    animation: 0.5s fadeOut;
+}
+.ahead .MobilePrizes .MobileFrontTree{
+    animation: 0.5s fadeIn;
+}
+
+/* Sponsors CSS */
+
+.MobileSponsors{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient( to right , #00000000 , #00000044,#00000044 , #00000000);
+    font-family: var(--fantasy-font);
+}
+
+.MobileSponsorsText{
+    color: antiquewhite;
+    font-size: var(--font-size-heavy);
+}
+
+.MobileSponsorsLogos{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MobileSponsorsLogos .company{
+    width: 70%;
+}
+
+.MobileSponsorsProxyText{
+    font-size: var(--font-size-large);
+    margin: 20px 0;
+    color: antiquewhite;
+    opacity: 0.75;
+}
+
+.MobileSponsorsApply{
+    color: var(--base-pink-lighter);
+}
+.MobileSponsorsApply a{
+    color: var(--base-blue-light);
+}
+
+.MobileSponsorsLogos{
+    animation: 0.44s ease-out 0s 1 scaleOut;
+}
+.MobileSponsors.backward .MobileSponsorsLogos , .MobileSponsors.forward .MobileSponsorsLogos{
+    animation: 0.44s ease-out 0s 1 scaleIn;
+}
+/* Mobile FAQ css */
+
+.MobileFAQ{
+    width: 100%;
+    height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: var(--fantasy-font);
+}
+
+.MobileFaqTitle{
+    font-size: var(--font-size-large);
+    color: antiquewhite;
+}
+.MobileFaqBoard{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.MobileFaqBoard .query{
+    padding: 3px;
+}
+.MobileFaqBoard .question{
+    color: var(--base-pink-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid var(--base-pink-lighter);
+    font-size: var(--font-size-heavy);
+}
+
+.MobileFaqBoard .answer {
+    color: var(--base-pink-lighter);
+    max-height: 0;
+    overflow: hidden;
+    font-size: var(--font-size-normal);
+    transition: all 0.7s cubic-bezier(0, 1, 0, 1);
+}
+
+.MobileFaqBoard .answer.show{
+    font-size: var(--font-size-normal);
+    color: var(--base-pink-lighter);
+    height: auto;
+    max-height: 300px;
+    transition: all 0.7s cubic-bezier(0, 1, 0, 1);
+}
+.MobileFaqBoard .query{
+    transform: translateY(400px);
+}
+.MobileFaqBoard .query.q0{
+    animation: 0.44s linear 0s 1 slideFAQInDown;
+    animation-fill-mode: forwards;
+}
+.MobileFaqBoard .query.q1{
+    animation: 0.44s ease-out 0.44s 1 slideFAQInDown;
+    animation-fill-mode: forwards;
+}
+.MobileFaqBoard .query.q2{
+    animation: 0.44s linear 0.88s 1 slideFAQInDown;
+    animation-fill-mode: forwards;
+}
+.MobileFaqBoard .query.q3{
+    animation: 0.44s ease-out 1.32s 1 slideFAQInDown;
+    animation-fill-mode: forwards;
+}
+.MobileFaqBoard .query.q4{
+    animation: 0.44s linear 1.76s 1 slideFAQInDown;
+    animation-fill-mode: forwards;
+}
+.MobileFaqBoard .query.q5{
+    animation: 0.44s ease-out 2.2s 1 slideFAQInDown;
+    animation-fill-mode: forwards;
+}
+
+.MobileFAQ.backward .query, .MobileFAQ.forward .query{
+    animation: 0.5s ease-out 0s 1 slideFAQOutDown;
+}
+/* Animations */
+
+@keyframes slideInUpDown {
+    0% {
+        transform: translateY(100%);
+    }
+
+    95% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes slideInUp {
+    0% {
+        transform: translateY(-200%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes slideInDown {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes slideOutDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+@keyframes slideOutUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideOutLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideOutRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes rotateIn {
+    0% {
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+@keyframes rotateOut {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
+@keyframes appearLeft{
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 0.75;
+        transform: translateX(0);
+    }
+}
+@keyframes appearRight{
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 0.75;
+        transform: translateX(0);
+    }
+}
+@keyframes disappearLeft{
+    to {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    from {
+        opacity: 0.75;
+        transform: translateX(0);
+    }
+}
+@keyframes disappearRight{
+    to {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    from {
+        opacity: 0.75;
+        transform: translateX(0);
+    }
+}
+@keyframes scaleUpLeft {
+    from{
+        width: 0;
+    }
+}
+@keyframes scaleDownLeft {
+    to{
+        width: 0;
+    }
+}
+@keyframes scaleOut {
+    from{
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes scaleIn {
+    from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slideFAQOutDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(400px);
+    }
+}
+@keyframes slideFAQInDown {
+    0% {
+        transform: translateY(400px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes alerts {
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
